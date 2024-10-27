@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vorace32 <vorace32000@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/27 17:22:26 by vorace32          #+#    #+#             */
-/*   Updated: 2024/10/27 17:22:30 by vorace32         ###   ########.fr       */
+/*   Created: 2024/10/27 16:48:55 by vorace32          #+#    #+#             */
+/*   Updated: 2024/10/27 17:23:08 by vorace32         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "src/fractol.h"
+#ifndef FRACTOL_H
+# define FRACTOL_H
 
-int	main(int a, char **b)
-{
-	if (!handle_error(a))
-		return (0);
-	(void)b;
-	write(1, "Hello, World!\n", 14);
-	return (0);
-}
+# include "../include/minilibx-linux/mlx.h"
+# include <unistd.h>
+
+// ===================[ HANDLING ]=================== //
+int	handle_error(int a);
+
+#endif
