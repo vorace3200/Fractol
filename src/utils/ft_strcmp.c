@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vorace32 <vorace32000@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/27 17:22:26 by vorace32          #+#    #+#             */
-/*   Updated: 2024/10/28 16:39:53 by vorace32         ###   ########.fr       */
+/*   Created: 2024/10/27 22:07:21 by vorace32          #+#    #+#             */
+/*   Updated: 2024/10/28 16:40:15 by vorace32         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "src/fractol.h"
+#include "../fractol.h"
 
-int	main(int a, char **b)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	if (!handle_error(a, b))
-		return (0);
-	entry_main(b);
-	return (0);
+	int	i;
+
+	i = 0;
+	while (s1[i] && s2[i] && s1[i] == s2[i])
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
