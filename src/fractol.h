@@ -6,7 +6,7 @@
 /*   By: vorace32 <vorace32000@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:48:55 by vorace32          #+#    #+#             */
-/*   Updated: 2024/10/28 16:25:23 by vorace32         ###   ########.fr       */
+/*   Updated: 2024/10/28 16:51:49 by vorace32         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int			get_color(int iteration, t_fractol *params);
 int			close_window(t_fractol *params);
 // ===================[ FRACTALS ]=================== //
 void		mandelbrot(t_fractol *params);
-
+void		julia(t_fractol *params);
 // ===================[ INIT ]=================== //
 int			init_fractol(t_fractol *params, char **b);
 

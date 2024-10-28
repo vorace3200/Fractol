@@ -6,11 +6,11 @@
 /*   By: vorace32 <vorace32000@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 17:17:49 by vorace32          #+#    #+#             */
-/*   Updated: 2024/10/28 16:37:55 by vorace32         ###   ########.fr       */
+/*   Updated: 2024/10/28 16:47:12 by vorace32         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../fractol.h"
+#include "../fractol.h"
 
 int	handle_error(int a, char **b)
 {

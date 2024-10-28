@@ -6,7 +6,7 @@
 /*   By: vorace32 <vorace32000@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:23:23 by vorace32          #+#    #+#             */
-/*   Updated: 2024/10/28 16:40:44 by vorace32         ###   ########.fr       */
+/*   Updated: 2024/10/28 17:57:31 by vorace32         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	init_fractol(t_fractol *params, char **b)
 {
 	params->zoom = 1.0;
-	params->max_iterations = 200;
-	params->color_shift = 1;
+	params->max_iterations = 80;
+	params->color_shift = 2;
 	params->offset_x = 0.0;
 	params->offset_y = 0.0;
 	params->color_scheme = 0;
@@ -29,6 +29,7 @@ int	init_fractol(t_fractol *params, char **b)
 	{
 		params->julia_real = -0.7;
 		params->julia_imaginary = 0.27015;
+		params->fractal_type = JULIA;
 	}
 	else if (ft_strcmp(b[1], "burning_ship") == 0)
 		params->fractal_type = BURNING_SHIP;
