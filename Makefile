@@ -39,7 +39,7 @@ MLX_LIB = $(MLX_DIR)/libmlx.a
 SRC = main.c src/error/error.c src/initialization/init.c src/initialization/entry_main.c \
 	src/utils/ft_strcmp.c	src/initialization/handle_fractals.c src/fractals/mandelbrot.c  \
 	src/moves/handle_keys.c src/moves/handle_mouse.c src/utils/fractols_utils.c \
-	src/fractals/julia.c
+	src/fractals/julia.c src/fractals/burning_ship.c
 OBJ = $(SRC:.c=.o)
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -I$(MLX_DIR)

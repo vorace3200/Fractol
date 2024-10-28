@@ -6,7 +6,7 @@
 /*   By: vorace32 <vorace32000@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:58:29 by vorace32          #+#    #+#             */
-/*   Updated: 2024/10/28 17:57:12 by vorace32         ###   ########.fr       */
+/*   Updated: 2024/10/28 18:00:07 by vorace32         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	get_color_scheme0(int iteration, t_fractol *params)
 	return ((r << 16) | (g << 8) | b);
 }
 
-int	get_color_scheme1(int iteration, t_fractol *params)
+int	get_color_scheme1(int iteration)
 {
 	int	r;
 	int	g;
@@ -58,7 +58,7 @@ int	get_color(int iteration, t_fractol *params)
 	if (params->color_scheme == 0)
 		return (get_color_scheme0(iteration, params));
 	else if (params->color_scheme == 1)
-		return (get_color_scheme1(iteration, params));
+		return (get_color_scheme1(iteration));
 	else if (params->color_scheme == 2)
 		return ((iteration * 255 / params->max_iterations) * 0x010101);
 	else
