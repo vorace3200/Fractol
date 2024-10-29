@@ -6,7 +6,7 @@
 /*   By: vorace32 <vorace32000@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:48:55 by vorace32          #+#    #+#             */
-/*   Updated: 2024/10/28 18:14:53 by vorace32         ###   ########.fr       */
+/*   Updated: 2024/10/29 12:17:10 by vorace32         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,8 @@ int			entry_main(char **b);
 
 // ===================[ UTILS ]=================== //
 int			ft_strcmp(const char *s1, const char *s2);
+int			ft_strisdigit(char *str);
+int			ft_atoi(char *string);
 void		my_mlx_pixel_put(t_fractol *data, int x, int y, int color);
 int			get_color(int iteration, t_fractol *params);
 int			close_window(t_fractol *params);
