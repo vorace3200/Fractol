@@ -8,4 +8,4 @@ Implemented a direct redraw mechanism for the fractal during zoom operations to 
 
 ## Screenshot
 
-![App Screenshot](https://github.com/vorace3200/Fractol/edit/main/image.png)
+![App Screenshot](https://github.com/vorace3200/Fractol/edit/main/image.png?raw=true)
